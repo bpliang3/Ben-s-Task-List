@@ -10,6 +10,8 @@ import UIKit
 
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet var tblTasks: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -18,6 +20,21 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // Returning to view
+    override func viewWillAppear(animated: Bool) {
+        tblTasks.reloadData()
+    }
+    
+    //UITableViewDelegate
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+     
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            //println("Delete this row")
+            taskMGR.tasks.removeAtIndex(indexPath.row)
+            tblTasks.reloadData()
+        }
     }
     
     // UITableViewDataSource

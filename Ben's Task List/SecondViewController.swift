@@ -26,7 +26,13 @@ class SecondViewController: UIViewController, UITextFieldDelegate  {
    
     // Events
     @IBAction func btnAddTask_Click(sender: UIButton) {
-        println("Button was clicked")
+        //println("Button was clicked")
+        taskMGR.addTask(txtTask.text, desc: txtDesc.text)
+        self.view.endEditing(true)
+        txtTask.text = ""
+        txtDesc.text = ""
+        
+        self.tabBarController?.selectedIndex = 0
     }
     
     
