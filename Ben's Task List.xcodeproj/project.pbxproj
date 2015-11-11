@@ -14,6 +14,7 @@
 		BBF4CD6C1BF3291C0076B784 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBF4CD6B1BF3291C0076B784 /* Images.xcassets */; };
 		BBF4CD6F1BF3291C0076B784 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBF4CD6D1BF3291C0076B784 /* LaunchScreen.xib */; };
 		BBF4CD7B1BF3291C0076B784 /* Ben_s_Task_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF4CD7A1BF3291C0076B784 /* Ben_s_Task_ListTests.swift */; };
+		BBF4CD871BF32A650076B784 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF4CD861BF32A650076B784 /* TaskManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		BBF4CD741BF3291C0076B784 /* Ben's Task ListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ben's Task ListTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF4CD791BF3291C0076B784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBF4CD7A1BF3291C0076B784 /* Ben_s_Task_ListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ben_s_Task_ListTests.swift; sourceTree = "<group>"; };
+		BBF4CD861BF32A650076B784 /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				BBF4CD621BF3291C0076B784 /* AppDelegate.swift */,
+				BBF4CD861BF32A650076B784 /* TaskManager.swift */,
 				BBF4CD641BF3291C0076B784 /* FirstViewController.swift */,
 				BBF4CD661BF3291C0076B784 /* SecondViewController.swift */,
 				BBF4CD681BF3291C0076B784 /* Main.storyboard */,
@@ -217,6 +220,7 @@
 			files = (
 				BBF4CD671BF3291C0076B784 /* SecondViewController.swift in Sources */,
 				BBF4CD631BF3291C0076B784 /* AppDelegate.swift in Sources */,
+				BBF4CD871BF32A650076B784 /* TaskManager.swift in Sources */,
 				BBF4CD651BF3291C0076B784 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
