@@ -10,6 +10,10 @@ import UIKit
 
 class SecondViewController: UIViewController, UITextFieldDelegate  {
 
+    @IBOutlet var txtTask: UITextField!
+    @IBOutlet var txtDesc: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +23,14 @@ class SecondViewController: UIViewController, UITextFieldDelegate  {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+   
+    // Events
+    @IBAction func btnAddTask_Click(sender: UIButton) {
+        println("Button was clicked")
+    }
     
+    
+    // IOS Touch Functions
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         self.view.endEditing(true)
     }
