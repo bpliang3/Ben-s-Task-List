@@ -29,8 +29,8 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "test")
         
-        cell.textLabel!.text = taskMGR.tasks[indexPath.row].name
-        cell.detailTextLabel!.text = taskMGR.tasks[indexPath.row].desc
+        cell.textLabel?.text = taskMGR.tasks[indexPath.row].name
+        cell.detailTextLabel?.text = taskMGR.tasks[indexPath.row].desc
         
         return cell
         
